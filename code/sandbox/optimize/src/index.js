@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import AppWithPerfTools from './AppWithPerfTools';
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
@@ -27,4 +27,7 @@ function createBoxes(number) {
 const boxes = createBoxes(5000);
 
 const mountNode: HTMLElement = document.getElementById('mount');
-ReactDOM.render(<App boxes={boxes} />, mountNode);
+
+
+
+ReactDOM.render(<AppWithPerfTools boxes={boxes} />, mountNode);
